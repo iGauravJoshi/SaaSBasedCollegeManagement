@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Smartway - HTML Template">
+		<meta name="author" content="Coffeecream Themes, info@coffeecream.eu">
+		<title>SaaS Based College Management</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<!-- Main Stylesheet -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+        
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- ========== HEADER START ========== -->
+
+		<header>
+
+			<!-- ==== TOOLS START ==== -->
+			<div class="tools">
+				<div class="container">
+					<div class="pull-right">
+						<a href="Login.aspx"><i class="fa fa-lock"></i><span>Log Out</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- ==== TOOLS END ==== -->
+
+			<!-- ==== NAVBAR START ==== -->
+			<div class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand" style="font-size: xx-large; color: #FFFFFF;">SaaS Based College Management</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="SuperAdminHome.aspx">Home</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Add New<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="StudentRegister.aspx">Student</a></li>
+									<li><a href="TeacherRegister.aspx">Teacher</a></li>
+									<li><a href="NonTeacherRegister.aspx">Non-Teacher</a></li>
+									<li><a href="Client.aspx">Client</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- ==== NAVBAR END ==== -->
+
+		</header>
+
+		<!-- ========== HEADER END ========== -->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <!-- Modernizr Plugin -->
+		<script src="js/modernizr.custom.97074.js"></script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<!-- Bootstrap Plugins -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Retina Plugin -->
+		<script src="js/retina-1.1.0.min.js"></script>
+
+		<!-- Superslides Plugin -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.animate-enhanced.min.js"></script>
+		<script src="js/jquery.superslides.js"></script>
+
+		<!-- Owl Carousel Plugin -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- Parallax ImageScroll Plugin -->
+		<script src="js/jquery.parallax-1.1.3.js"></script>
+
+		<!-- Fancybox Plugin -->
+		<script src="js/jquery.fancybox.js"></script>
+
+		<!-- ImagesLoaded Plugin -->
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+
+		<!-- Masonry Plugin -->
+		<script src="js/masonry.pkgd.min.js"></script>
+
+		<!-- Progressbar Plugin -->
+		<script src="js/bootstrap-progressbar.js"></script>
+
+		<!-- Scroll Reveal Plugin -->
+		<script src="js/scrollReveal.js"></script>
+
+		<!-- Magic Form Processing -->
+		<script src="js/magic.js"></script>
+
+		<!-- jQuery Settings -->
+		<script src="js/settings.js"></script>
+</body>
+</html>

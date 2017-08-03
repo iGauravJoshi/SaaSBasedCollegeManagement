@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Simple.master" AutoEventWireup="true" CodeFile="Regi.master.cs" Inherits="Regi" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<title>Registration Pannel</title>
+    <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smartWizard-2.0.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Smart Wizard 	
+        $('#wizard').smartWizard();
+
+        function onFinishCallback() {
+            $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+        }
+    });
+</script>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+</asp:Content>
+

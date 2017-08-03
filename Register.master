@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Register.master.cs" Inherits="Register" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Registration Pannel</title>
+    <link href="css/smart_wizard.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smartWizard-2.0.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Smart Wizard 	
+        $('#wizard').smartWizard();
+
+        function onFinishCallback() {
+            $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+        }
+    });
+</script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
